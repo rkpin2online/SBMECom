@@ -1,0 +1,9 @@
+package com.rk.repo;
+
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+import com.rk.dto.Product;
+
+public interface ProductRepository extends MongoRepository<Product, Integer> {
+	
+}

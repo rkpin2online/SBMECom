@@ -1,0 +1,18 @@
+#port
+server.port=9092
+
+#App Name
+spring.application.name=Product Microservices In DEV Environment
+
+#DB
+spring.data.mongodb.host=localhost
+spring.data.mongodb.port=27017
+spring.data.mongodb.database=shopping
+spring.profile.active=dev , test
+
+#product
+product.currencies[0]=INR
+product.currencies[1]=USD
+product.currencies[2]=EUR
+product.currencies[3]=AUD
+product.currencies[4]=HKD

@@ -1,0 +1,13 @@
+#port
+server.port=9091
+
+#App Name
+spring.application.name=Product Microservices
+
+#DB
+spring.data.mongodb.host=localhost
+spring.data.mongodb.port=27017
+spring.data.mongodb.database=shopping
+
+#product
+product.currencies.

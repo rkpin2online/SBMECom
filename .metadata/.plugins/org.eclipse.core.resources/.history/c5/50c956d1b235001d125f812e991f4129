@@ -1,0 +1,12 @@
+package com.rk.exception;
+
+public class CurrenciesNotValidException extends Throwable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public CurrenciesNotValidException(String message) {
+		super(message);
+	}
+}

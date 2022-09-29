@@ -1,0 +1,65 @@
+package com.rk.service;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.rk.dto.Product;
+import com.rk.repo.ProductRepository;
+
+/**
+ * @author RK
+ *
+ */
+
+@Service
+public class ProductService {
+
+	@Autowired
+	private ProductRepository productRepo;
+
+	List<Product> products = new ArrayList<>();
+
+	public String addProduct(Product product) {
+
+		productRepo.save(product);
+
+		return "Success";
+	}
+
+	public List<Product> listAllProducts() {
+		return productRepo.findAll();
+	}
+
+	public List<Product> productCategoryList(String category) {
+
+		return productRepo.findByCategory(category);
+
+	}
+
+	public Product productById(Integer id) {
+		return productRepo.findById(id).get();
+	}
+
+	public String updateProduct(Product product) {
+
+		for(Product prod : products) {
+			if(prod.getId().equals(product.getId())) {
+				productRepo.save(product);
+				return "Product Updated Successfully...";
+			}
+		}
+		return "Product Updated Failed !!!";
+	}
+
+
+	public String deleteProductById(Integer id) {
+		productRepo.deleteById(id);
+		return "Product Deletion Failed";
+	}
+
+
+}

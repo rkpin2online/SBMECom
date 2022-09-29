@@ -1,0 +1,5 @@
+package com.rk.repo;
+
+public interface ProductRepository {
+
+}

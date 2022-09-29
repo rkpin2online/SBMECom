@@ -1,0 +1,17 @@
+'-':
+- INR
+- USD
+- EUR
+application: ''
+currencies: ''
+data: ''
+database: shopping
+host: localhost
+mongodb: ''
+name: Product Microservices
+port:
+- 9091
+- 27017
+product: ''
+server: ''
+spring: ''

@@ -1,0 +1,12 @@
+package com.rk.exception;
+
+public class CurrencyNotValidException extends RuntimeException {
+/**
+	 * 
+	 */
+	private static final long serialVersionUID = -7606912581435350841L;
+
+public CurrencyNotValidException(String message) {
+	super(message);
+}
+}

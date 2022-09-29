@@ -1,0 +1,10 @@
+server:
+  port: 9091
+spring:
+  application:
+    name: Product Microservices
+  data:
+    mongodb:
+      database: shopping
+      host: localhost
+      port: 27017

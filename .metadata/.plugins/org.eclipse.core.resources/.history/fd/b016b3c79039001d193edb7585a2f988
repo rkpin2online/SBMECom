@@ -1,0 +1,5 @@
+package com.rk.filters;
+
+public class MyCustomHttpResponseWrapper {
+
+}

@@ -1,0 +1,5 @@
+package com.rk.service.config;
+
+public class ProductConfiguration {
+
+}

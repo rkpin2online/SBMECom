@@ -1,0 +1,51 @@
+package com.rk.dto;
+
+import java.util.List;
+
+import javax.validation.constraints.Max;
+import javax.validation.constraints.NotNull;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+
+/**
+ * @author RK
+ *
+ */
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Document(collection = "product")
+public class Product {
+	
+	@Id
+	private String id;
+	
+	@NotNull
+	private String name;
+	
+	@NotNull(message = "Category Should not be null")
+	private Category category;
+	
+	@NotNull
+	private double price;
+	
+	@NotNull
+	private String currency;
+	
+	@NotNull
+	@Max(100)
+	private double discount;
+	
+	@NotNull
+	private String discountDiscription;
+	
+	@NotNull
+	private List<String> imageURLs;
+}

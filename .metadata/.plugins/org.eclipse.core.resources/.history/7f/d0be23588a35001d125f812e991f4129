@@ -1,0 +1,5 @@
+package com.rk.exception;
+
+public class OfferNotValidateException extends Exception {
+
+}

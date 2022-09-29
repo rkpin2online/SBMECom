@@ -1,0 +1,7 @@
+package com.rk.exception;
+
+public class CurrenciesNotValidException extends Exception {
+	public CurrenciesNotValidException(String message) {
+		super(message);
+	}
+}

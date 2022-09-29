@@ -1,0 +1,14 @@
+package com.rk.dto;
+
+import java.time.LocalDateTime;
+import java.util.List;
+
+import org.springframework.http.HttpStatus;
+
+public class APIError {
+	
+	private HttpStatus status;
+	private List<String> errors;
+	private LocalDateTime timeStamp;
+	private String path;
+}

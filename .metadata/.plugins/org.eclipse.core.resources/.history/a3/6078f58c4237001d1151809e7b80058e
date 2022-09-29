@@ -1,0 +1,8 @@
+#port
+server.port=9093
+
+#App Name
+spring.application.name=Product Microservices In DEV Environment
+
+#product
+product.currencies[0]=INR
